@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /*------------- Header --------------  */
@@ -14,6 +15,8 @@ body{
     background-color: rgb(30, 30, 100);
     padding-top: 110px;
     padding-bottom: 80px;
+    margin-bottom: 70px;
+    
 }
 .header-text{
     padding-left: 156px;
@@ -21,16 +24,17 @@ body{
     font-size: 35px;
     padding-top: 30px;
     color: #FFFFFF;
-    
+    text-align: left;
 }
-a{
+.join-icon a{
     text-decoration: none;
     background-color: crimson;
     padding: 7px 30px;
     font-size: 16px;
     color: #FFFFFF;
-
-    
+}
+.join-icon a:hover{
+    background-color:gray;
 }
 .image img{
     width: 65%;
@@ -40,14 +44,28 @@ a{
 
 /*------------------ Players & blogs ---------------- */
 
+.players{
+    display:grid ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 210px;
+    padding-top: 27px;
+    padding-bottom: 165px;
+    
+}
 .player-name{
     size: 28px;
     width: 300px;
+    
 }
 .player-title{
     font-size: 16px;
     color: #6C6C6C;
     line-height: 26px;
+    flex-direction: column;
+    text-align: left;
 }
 .player img{
     width: 300px;
@@ -57,6 +75,49 @@ a{
     width: 330px;
     height: 474px;
     padding: 15px;
+    flex-direction: row;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+/*------------- match title -----------------  */
+
+.match-image img{
+    width: 567px;
+    height: 427px;
+    padding-top: 50px;
+}
+.text-title{
+    width: 469px;
+    height: 309px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+    font-size: 25px;
+}
+/*------------- Chaimpion Team ----------- */
+
+.champion-image{
+    width: 567px;
+    height: 427px;
+}
+.champion-text{
+    padding-right: 50px;
+}
+
+/* -------------- footer ----------------- */
+
+.footer-img img{
+    width: 483.87px;
+    height: 110px;
+}
+.font-icon{
+    font-size: 23px;
+    color: #969BAB;
+    margin-bottom: 20px 0px;
+    margin-right: 10px;
+}
+
+.footer{
+    text-align: center;
+
 }
