@@ -121,3 +121,33 @@ body{
     text-align: center;
 
 }
+
+/*------------- Media Quaries ------------ */
+
+/* ----------------- Mobile--------------- */
+
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    .half-width, .players, .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .player-title{
+        flex-direction: column;
+    }
+}
+
+/* ---------------- Tablet--------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .half-width, .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+.players{
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(243, 242, 242);
+}
+}
